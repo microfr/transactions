@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 const IS_DEV = process.env.NODE_ENV === 'development'
 
@@ -48,10 +49,10 @@ let webpackConfig = {
         ]
     },
     plugins: [
-        IS_DEV &&
+        IS_DEV ?
             new HtmlWebpackPlugin({
                 template: './index.html'
-            })
+            }) : new ManifestPlugin()
     ].filter(x => x)
 }
 
