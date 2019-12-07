@@ -1,0 +1,11 @@
+.tr {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 12px;
+    color: #666;
+    width: 400px;
+
+    &__item {
+        line-height: 2;
+    }
+}
