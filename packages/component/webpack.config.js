@@ -16,6 +16,7 @@ const externals = {
 let webpackConfig = {
     entry: IS_DEV ? './Example.tsx' : './src/index.tsx',
     output: {
+        library: 'Transactions',
         path: path.join(__dirname, '/dist'),
         filename: 'index.js',
         libraryTarget: 'umd',
