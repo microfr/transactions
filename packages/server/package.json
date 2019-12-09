@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "APP_VERSION=2.0.0 node --inspect=9219 server.js"
+    "start": "APP_VERSION=1.0.0 node --inspect=9219 server.js"
   },
   "author": "",
   "license": "ISC",

@@ -10,7 +10,7 @@ const externals = {
     'prop-types': 'PropTypes',
     'graphql': 'graphql',
     '@apollo/react-hooks': '@apollo/react-hooks',
-    'apollo-boost': 'apollo-boost'
+    'apollo-boost': 'ApolloBoost'
 }
 
 let webpackConfig = {
@@ -18,7 +18,7 @@ let webpackConfig = {
     output: {
         library: 'Transactions',
         path: path.join(__dirname, '/dist'),
-        filename: 'index.js',
+        filename: '[name]-[hash].js',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
